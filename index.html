@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Alone — A Guided Journey Through Loneliness, Faith, and Meaningful Connection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD GATE -->
+<div id="password-gate" class="gate-overlay">
+  <div class="gate-inner">
+    <div class="gate-logo">
+      <div class="gate-brand">Brave Feelings Lab</div>
+      <h1 class="gate-title">Beyond Alone</h1>
+      <p class="gate-subtitle">A Guided Journey Through Loneliness,<br>Faith, and Meaningful Connection</p>
+    </div>
+    <div class="gate-form">
+      <label class="gate-label">Enter your access code</label>
+      <div class="gate-input-wrap">
+        <input type="password" id="gate-input" class="gate-input" placeholder="••••••••••••" autocomplete="off">
+        <button class="gate-eye" id="gate-eye" type="button" onclick="togglePasswordVisibility()">
+          <span id="gate-eye-label">Show</span>
+        </button>
+      </div>
+      <button class="gate-btn" onclick="checkPassword()">Enter the Journey</button>
+      <div id="gate-error" class="gate-error"></div>
+    </div>
+    <p class="gate-disclaimer">Beyond Alone is an educational and spiritual reflection program. It is not therapy, medical care, crisis care, or a substitute for professional support. If you feel unsafe or at risk of harming yourself, please contact a qualified professional or emergency service immediately.</p>
+    <p class="gate-disclaimer" style="margin-top:0.75rem">Scripture quotations are taken from the Holy Bible, New Living Translation, copyright &copy; 1996, 2004, 2015 by Tyndale House Foundation. Used by permission of Tyndale House Publishers, Carol Stream, Illinois 60188. All rights reserved.</p>
+  </div>
+</div>
+
+<!-- HAMBURGER MENU — right panel, Calm the Storm style -->
+<div id="menu-overlay" class="menu-overlay">
+  <div class="menu-panel">
+
+    <!-- Top: brand + close -->
+    <div class="menu-top">
+      <div class="menu-top-brand">
+        <div class="menu-top-avatar"></div>
+        <div class="menu-top-name">Beyond Alone</div>
+      </div>
+      <button class="menu-close" onclick="closeMenu()">✕</button>
+    </div>
+
+    <!-- Actions -->
+    <div class="menu-actions">
+      <button class="menu-action-btn danger" onclick="menuAction('logoff')">
+        <span class="menu-action-icon">⏻</span> Log Off
+      </button>
+      <button class="menu-action-btn danger" onclick="menuAction('exit')">
+        <span class="menu-action-icon">↩</span> Exit Program
+      </button>
+      <button class="menu-action-btn" onclick="menuAction('restart')">
+        <span class="menu-action-icon">↺</span> Restart from Beginning
+      </button>
+      <button class="menu-action-btn" onclick="menuAction('citations')">
+        <span class="menu-action-icon">¹</span> Citations &amp; Sources
+      </button>
+    </div>
+
+    <!-- Screen list — dynamically populated -->
+    <div class="menu-screen-list" id="menu-screen-list">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- Footer progress -->
+    <div class="menu-footer">
+      <div class="menu-footer-progress">
+        <div class="menu-footer-fill" id="menu-footer-fill"></div>
+      </div>
+      <div class="menu-footer-text">
+        <span id="menu-footer-text">Screen 1 of 150</span>
+        <span id="menu-footer-week">Week 1 of 8</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAIN PROGRAM -->
+<div id="program" class="program-wrap" style="display:none">
+
+  <!-- TOP BAR — Calm the Storm style -->
+  <header class="topbar">
+    <div class="topbar-count"><span id="topbar-num">1</span><span class="topbar-slash">/</span><span class="topbar-total">150</span></div>
+    <div class="topbar-progress"><div class="topbar-progress-fill" id="topbar-progress-fill"></div></div>
+    <div class="topbar-phase" id="topbar-phase">The Anatomy of the Void</div>
+    <button class="topbar-menu" onclick="openMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- SCREEN CONTAINER -->
+  <main class="screen-container" id="screen-container">
+    <!-- screens injected by JS -->
+  </main>
+
+  <!-- BOTTOM NAV -->
+  <footer class="bottom-nav">
+    <button class="nav-btn nav-back" id="nav-back" onclick="goBack()">← Back</button>
+    <div class="nav-dots" id="nav-dots"></div>
+    <button class="nav-btn nav-next" id="nav-next" onclick="goNext()">Next →</button>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
