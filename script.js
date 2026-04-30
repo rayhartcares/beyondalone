@@ -2094,15 +2094,22 @@ const screens = [
     badge: 'anchor',
     badgeLabel: 'Scripture',
     render: () => `
-      <div class="screen">
-        <div class="scripture-screen">
-          <div class="scripture-ref">John 8:32 &nbsp;·&nbsp; NLT</div>
-          <p class="scripture-text">
-            "And you will know the truth,<br>
-            and the truth will set you free."
-          </p>
-          <div class="scripture-divider"></div>
-          <div class="scripture-translation-note">New Living Translation</div>
+      <div class="screen-single">
+        <div class="screen-img-panel">
+          <img src="assets/images/s54-john832.webp" alt="A key in light" loading="lazy">
+        </div>
+        <div class="screen-content-panel">
+          <div class="screen">
+            <div class="scripture-screen">
+              <div class="scripture-ref">John 8:32 &nbsp;·&nbsp; NLT</div>
+              <p class="scripture-text">
+                "And you will know the truth,<br>
+                and the truth will set you free."
+              </p>
+              <div class="scripture-divider"></div>
+              <div class="scripture-translation-note">New Living Translation</div>
+            </div>
+          </div>
         </div>
       </div>
     `
