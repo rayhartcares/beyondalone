@@ -5791,7 +5791,7 @@ function renderScreen() {
 
   } else if (imgSrc) {
     // Image exists — full two-column layout
-    var imgPanel = '<div class="screen-img-panel"><div class="screen-img-panel-bg" style="background-image:url(' + imgSrc + ')"></div></div>';
+    var imgPanel = '<div class="screen-img-panel"><div class="screen-img-panel-bg" style="background-image:url(\'' + imgSrc + '\')" ></div></div>';
     var bodyContent = badge === 'story'
       ? raw.replace(/<div class="story-cinema-band">[^]*?<\/div>\s*<\/div>/, '')
       : raw;
@@ -6107,25 +6107,25 @@ function getScreenImage(screenId) {
   var images = {
     // Uncomment each line as you produce and upload the image:
     // --- WEEK 1 ---
-    // 'S-01': 'assets/images/s01-welcome.jpg',
-    // 'S-02': 'assets/images/s02-honest-journey.jpg',
-    // 'S-03': 'assets/images/s03-name.jpg',
-    // 'S-04': 'assets/images/s04-marcus.jpg',
-    // 'S-05': 'assets/images/s05-two-aches.jpg',
-    // 'S-06': 'assets/images/s06-which-ache.jpg',
-    // 'S-07': 'assets/images/s07-priya.jpg',
-    // 'S-08': 'assets/images/s08-body-effects.jpg',
-    // 'S-09': 'assets/images/s09-body-map.jpg',
-    // 'S-10': 'assets/images/s10-james.jpg',
-    // 'S-11': 'assets/images/s11-signal.jpg',
-    // 'S-12': 'assets/images/s12-how-long.jpg',
-    // 'S-13': 'assets/images/s13-signal-sentence.jpg',
-    // 'S-14': 'assets/images/s14-elena.jpg',
-    // 'S-15': 'assets/images/s15-ancient-company.jpg',
-    // 'S-16': 'assets/images/s16-psalm.jpg',
-    // 'S-17': 'assets/images/s17-still-alive.jpg',
-    // 'S-18': 'assets/images/s18-what-i-write.jpg',
-    // 'S-19': 'assets/images/s19-week1-complete.jpg',
+    'S-01': 'assets/images/s01-welcome.jpg',
+    'S-02': 'assets/images/s02-honest-journey.jpg',
+    'S-03': 'assets/images/s03-name.jpg',
+    'S-04': 'assets/images/s04-marcus.jpg',
+    'S-05': 'assets/images/s05-two-aches.jpg',
+    'S-06': 'assets/images/s06-which-ache.jpg',
+    'S-07': 'assets/images/s07-priya.jpg',
+    'S-08': 'assets/images/s08-body-effects.jpg',
+    'S-09': 'assets/images/s09-body-map.jpg',
+    'S-10': 'assets/images/s10-james.jpg',
+    'S-11': 'assets/images/s11-signal.jpg',
+    'S-12': 'assets/images/s12-how-long.jpg',
+    'S-13': 'assets/images/s13-signal-sentence.jpg',
+    'S-14': 'assets/images/s14-elena.jpg',
+    'S-15': 'assets/images/s15-ancient-company.jpg',
+    'S-16': 'assets/images/s16-psalm.jpg',
+    'S-17': 'assets/images/s17-still-alive.jpg',
+    'S-18': 'assets/images/s18-what-i-write.jpg',
+    'S-19': 'assets/images/s19-week1-complete.jpg',
     // --- WEEKS 2-8 image prompts in WEEK1_IMAGES_ILLUSTRATED.txt ---
     // 'S-20': 'assets/images/s20-nadia.jpg',
     // 'S-23': 'assets/images/s23-daniel.jpg',
@@ -7166,7 +7166,7 @@ function showApprovalResult(cert) {
       '<p style="font-size:13px;color:#A8DFD0;line-height:1.8;margin-bottom:14px">' +
         'Approval No. <strong style="color:#fff">' + cert.approval_no + '</strong> is active for <strong style="color:#fff">' + cert.recipient_name + '</strong>.<br>' +
         'Completed ' + certDateDisplay(cert.completion_date) + '.<br>' +
-        'Prints used: <strong style="color:#fff">0</strong> of ' + CERT_CONFIG.maxPrints + '. Remaining: <strong style="color:#fff">' + remaining + '</strong>.' +
+        'Prints used: <strong style="color:#fff">' + (parseInt(cert.prints_used) || 0) + '</strong> of ' + CERT_CONFIG.maxPrints + '. Remaining: <strong style="color:#fff">' + remaining + '</strong>.' +
       '</p>' +
       '<button onclick="printBACert(' + "'" + cert.approval_no + "'" + ')" ' +
         'style="background:#1D9E75;color:#fff;border:none;border-radius:8px;padding:10px 22px;font-size:13px;font-weight:500;cursor:pointer">' +
@@ -7263,8 +7263,9 @@ function printBACert(approvalNo) {
     '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">' +
     '<style>' +
     '*{box-sizing:border-box;margin:0;padding:0}' +
-    'body{background:#f0ece4;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px;font-family:"DM Sans",Georgia,serif}' +
-    '.cp{background:#faf8f3;width:780px;min-height:560px;position:relative;padding:56px 68px 46px;display:flex;flex-direction:column;align-items:center;text-align:center;border:3px solid #1a2744}' +
+    '@page{size:11in 8.5in;margin:0}' +
+    'html,body{width:11in;height:8.5in;overflow:hidden;background:#faf8f3;font-family:"DM Sans",Georgia,serif}' +
+    '.cp{background:#faf8f3;width:10.2in;height:7.7in;position:relative;margin:0.4in auto 0;padding:0.45in 0.65in 0.35in;display:flex;flex-direction:column;align-items:center;text-align:center;border:3px solid #1a2744}' +
     '.corner{position:absolute;width:88px;height:88px}.corner svg{width:88px;height:88px}' +
     '.c-tl{top:6px;left:6px}.c-tr{top:6px;right:6px;transform:scaleX(-1)}' +
     '.c-bl{bottom:6px;left:6px;transform:scaleY(-1)}.c-br{bottom:6px;right:6px;transform:scale(-1,-1)}' +
@@ -7291,7 +7292,7 @@ function printBACert(approvalNo) {
     '.ap{font-size:9px;color:#bbb;margin-top:3px}' +
     '.cb{margin-top:12px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#1a2744}' +
     '.cd{font-size:9px;color:#aaa;margin-top:4px;font-style:italic;letter-spacing:0;text-transform:none;max-width:520px}' +
-    '@media print{body{background:#fff;padding:0}.cp{width:100%;border-color:#1a2744;box-shadow:none}}' +
+    '@media print{@page{size:11in 8.5in;margin:0}html,body{width:11in;height:8.5in;background:#faf8f3}.cp{margin:0.4in auto 0;box-shadow:none}}' +
     '</style></head><body>' +
     '<div class="cp">' +
     '<div class="corner c-tl">' + cornerSVG + '</div>' +
@@ -7301,12 +7302,9 @@ function printBACert(approvalNo) {
     '<div class="ib"></div>' +
     '<div class="ey">Brave Feelings Lab</div>' +
     '<div class="ct">Certificate of Completion</div>' +
-    '<div class="dr"><hr><span class="di">&#9670;</span><hr></div>' +
     '<div class="ps">A Guided Journey Through Loneliness, Faith, and Meaningful Connection</div>' +
-    '<div class="dr"><hr><span class="di">&#9670;</span><hr></div>' +
     '<div class="cl">This Certifies That</div>' +
     '<div class="rn">' + cert.recipient_name + '</div>' +
-    '<div class="dr"><hr><span class="di">&#9670;</span><hr></div>' +
     '<div class="ct2">has successfully completed all 150 screens across eight weeks of</div>' +
     '<div class="pn">Beyond Alone</div>' +
     '<div class="ft">CBT &nbsp;&middot;&nbsp; ACT &nbsp;&middot;&nbsp; Narrative Therapy &nbsp;&middot;&nbsp; Biblical Principles &nbsp;&middot;&nbsp; Eight Weeks</div>' +
@@ -7336,6 +7334,9 @@ function printBACert(approvalNo) {
   if (!win) { alert('Please allow pop-ups to print your certificate.'); return; }
   win.document.write(html);
   win.document.close();
+
+  // Refresh the approval result block so counter updates on screen
+  showApprovalResult(cert);
 }
 
 // Show undo toast — user can reverse the count if they cancelled the print
