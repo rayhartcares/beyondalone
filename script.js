@@ -2094,22 +2094,15 @@ const screens = [
     badge: 'anchor',
     badgeLabel: 'Scripture',
     render: () => `
-      <div class="screen-single">
-        <div class="screen-img-panel">
-          <img src="assets/images/s54-john832.webp" alt="A key in light" loading="lazy">
-        </div>
-        <div class="screen-content-panel">
-          <div class="screen">
-            <div class="scripture-screen">
-              <div class="scripture-ref">John 8:32 &nbsp;·&nbsp; NLT</div>
-              <p class="scripture-text">
-                "And you will know the truth,<br>
-                and the truth will set you free."
-              </p>
-              <div class="scripture-divider"></div>
-              <div class="scripture-translation-note">New Living Translation</div>
-            </div>
-          </div>
+      <div class="screen">
+        <div class="scripture-screen">
+          <div class="scripture-ref">John 8:32 &nbsp;·&nbsp; NLT</div>
+          <p class="scripture-text">
+            "And you will know the truth,<br>
+            and the truth will set you free."
+          </p>
+          <div class="scripture-divider"></div>
+          <div class="scripture-translation-note">New Living Translation</div>
         </div>
       </div>
     `
@@ -2843,24 +2836,17 @@ const screens = [
     badge: 'anchor',
     badgeLabel: 'Scripture',
     render: () => `
-      <div class="screen-single">
-        <div class="screen-img-panel">
-          <img src="assets/images/s74-romans.webp" alt="Romans 5:3-4" loading="lazy">
-        </div>
-        <div class="screen-content-panel">
-          <div class="screen">
-            <div class="scripture-screen">
-              <div class="scripture-ref">Romans 5:3-4 &nbsp;·&nbsp; NLT</div>
-              <p class="scripture-text">
-                "We can rejoice, too, when we run into problems and trials,<br>
-                for we know that they help us develop endurance.<br>
-                And endurance develops strength of character,<br>
-                and character strengthens our confident hope of salvation."
-              </p>
-              <div class="scripture-divider"></div>
-              <div class="scripture-translation-note">New Living Translation</div>
-            </div>
-          </div>
+      <div class="screen">
+        <div class="scripture-screen">
+          <div class="scripture-ref">Romans 5:3-4 &nbsp;·&nbsp; NLT</div>
+          <p class="scripture-text">
+            "We can rejoice, too, when we run into problems and trials,<br>
+            for we know that they help us develop endurance.<br>
+            And endurance develops strength of character,<br>
+            and character strengthens our confident hope of salvation."
+          </p>
+          <div class="scripture-divider"></div>
+          <div class="scripture-translation-note">New Living Translation</div>
         </div>
       </div>
     `
@@ -5800,7 +5786,13 @@ function renderScreen() {
 
   var imgSrc = getScreenImage(screen.id);
 
-  if (badge === 'anchor') {
+  if (badge === 'anchor' && imgSrc) {
+    var imgPanel = '<div class="screen-img-panel"><div class="screen-img-panel-bg" style="background-image:url(\'' + imgSrc + '\')" ></div></div>';
+    container.innerHTML =
+      '<div class="screen-single">' + imgPanel +
+      '<div class="screen-content-panel">' + raw + '</div></div>';
+
+  } else if (badge === 'anchor') {
     container.innerHTML = raw;
 
   } else if (imgSrc) {
