@@ -13,7 +13,7 @@ const CONFIG = {
   password: 'Hebrews13Verses56',
   storageKey: 'beyondalone_progress',
   storageVersion: 9, // Increment this when data structure changes — forces fresh state
-  totalScreens: 150,
+  totalScreens: 151,
   programTitle: 'Beyond Alone'
 };
 
@@ -5016,7 +5016,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 36 of 40 &nbsp;·&nbsp; Screen 134 of 150</div>
+          <div class="week-session">Session 36 of 40 &nbsp;·&nbsp; Screen 134 of 151</div>
         </div>
         <span class="screen-badge badge-story">Story</span>
         <h1 class="screen-title">The four who walked through it.</h1>
@@ -5049,7 +5049,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 36 of 40 &nbsp;·&nbsp; Screen 135 of 150</div>
+          <div class="week-session">Session 36 of 40 &nbsp;·&nbsp; Screen 135 of 151</div>
         </div>
         <span class="screen-badge badge-insight">Insight</span>
         <h1 class="screen-title">What eight weeks actually builds.</h1>
@@ -5081,7 +5081,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 36 of 40 &nbsp;·&nbsp; Screen 136 of 150</div>
+          <div class="week-session">Session 36 of 40 &nbsp;·&nbsp; Screen 136 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Practice</span>
         <h1 class="screen-title">Where I am now.</h1>
@@ -5126,7 +5126,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 137 of 150</div>
+          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 137 of 151</div>
         </div>
         <span class="screen-badge badge-insight">Insight</span>
         <h1 class="screen-title">What to do when the feeling arrives.</h1>
@@ -5163,7 +5163,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 138 of 150</div>
+          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 138 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Practice</span>
         <h1 class="screen-title">Your personalised BEYOND card.</h1>
@@ -5215,7 +5215,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 139 of 150</div>
+          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 139 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Seed Harvest — S-13</span>
         <h1 class="screen-title">The signal sentence — transformed.</h1>
@@ -5261,7 +5261,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 140 of 150</div>
+          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 140 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Seed Harvest — S-31</span>
         <h1 class="screen-title">The shame sentence — answered.</h1>
@@ -5309,7 +5309,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 141 of 150</div>
+          <div class="week-session">Session 37 of 40 &nbsp;·&nbsp; Screen 141 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Evidence Review</span>
         <h1 class="screen-title">What the evidence says.</h1>
@@ -5358,7 +5358,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 38 of 40 &nbsp;·&nbsp; Screen 142 of 150</div>
+          <div class="week-session">Session 38 of 40 &nbsp;·&nbsp; Screen 142 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Connection Rhythm</span>
         <h1 class="screen-title">My weekly connection rhythm.</h1>
@@ -5417,7 +5417,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 38 of 40 &nbsp;·&nbsp; Screen 143 of 150</div>
+          <div class="week-session">Session 38 of 40 &nbsp;·&nbsp; Screen 143 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Solitude Rhythm</span>
         <h1 class="screen-title">My full life rhythm.</h1>
@@ -5469,7 +5469,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 38 of 40 &nbsp;·&nbsp; Screen 144 of 150</div>
+          <div class="week-session">Session 38 of 40 &nbsp;·&nbsp; Screen 144 of 151</div>
         </div>
         <span class="screen-badge badge-practice">Warning Signs</span>
         <h1 class="screen-title">My warning signs map.</h1>
@@ -5521,7 +5521,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 39 of 40 &nbsp;·&nbsp; Screen 145 of 150</div>
+          <div class="week-session">Session 39 of 40 &nbsp;·&nbsp; Screen 145 of 151</div>
         </div>
         <span class="screen-badge badge-story">Story</span>
         <h1 class="screen-title">The sentence they did not expect to write.</h1>
@@ -5579,7 +5579,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 39 of 40 &nbsp;·&nbsp; Screen 147 of 150</div>
+          <div class="week-session">Session 39 of 40 &nbsp;·&nbsp; Screen 147 of 151</div>
         </div>
         <span class="screen-badge" style="background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold-border)">The Final Declaration</span>
         <h1 class="screen-title">The whole truth — both sentences.</h1>
@@ -5626,7 +5626,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 40 of 40 &nbsp;·&nbsp; Screen 148 of 150</div>
+          <div class="week-session">Session 40 of 40 &nbsp;·&nbsp; Screen 148 of 151</div>
         </div>
         <span class="screen-badge" style="background:var(--gold-dim);color:var(--gold);border:1px solid var(--gold-border)">Programme Graduation</span>
         <h1 class="screen-title">You finished. That is a permanent fact.</h1>
@@ -5705,7 +5705,7 @@ const screens = [
       <div class="screen">
         <div class="week-header">
           <div class="week-label">Week 8 — The New Song</div>
-          <div class="week-session">Session 40 of 40 &nbsp;·&nbsp; Screen 149 of 150</div>
+          <div class="week-session">Session 40 of 40 &nbsp;·&nbsp; Screen 149 of 151</div>
         </div>
         <span class="screen-badge badge-close">Benne Hart</span>
         <h1 class="screen-title">What I want to say to you.</h1>
@@ -5738,7 +5738,7 @@ const screens = [
     sessionTitle: 'The certificate and close',
     week: 'Week 8',
     weekTitle: 'The New Song',
-    badge: 'anchor',
+    badge: 'close',
     badgeLabel: 'Scripture',
     render: () => `
       <div class="screen">
@@ -5787,10 +5787,9 @@ function renderScreen() {
   var imgSrc = getScreenImage(screen.id);
 
   if (badge === 'anchor' && imgSrc) {
-    var imgPanel = '<div class="screen-img-panel"><div class="screen-img-panel-bg" style="background-image:url(\'' + imgSrc + '\')" ></div></div>';
     container.innerHTML =
-      '<div class="screen-single">' + imgPanel +
-      '<div class="screen-content-panel">' + raw + '</div></div>';
+      '<div class="screen-scripture-bg" style="background-image:url(\'' + imgSrc + '\')">' +
+      '<div class="screen-scripture-bg-overlay">' + raw + '</div></div>';
 
   } else if (badge === 'anchor') {
     container.innerHTML = raw;
@@ -5798,7 +5797,7 @@ function renderScreen() {
   } else if (imgSrc) {
     // Image exists — full two-column layout
     var imgPanel = '<div class="screen-img-panel"><div class="screen-img-panel-bg" style="background-image:url(\'' + imgSrc + '\')" ></div></div>';
-    var bodyContent = badge === 'story'
+    var bodyContent = (badge === 'story' && raw.includes('story-cinema-band'))
       ? raw.replace(/<div class="story-cinema-band">[^]*?<\/div>\s*<\/div>/, '')
       : raw;
     container.innerHTML =
@@ -5819,7 +5818,7 @@ function renderScreen() {
   const topbarFill = document.getElementById('topbar-progress-fill');
   const topbarPhase = document.getElementById('topbar-phase');
   if (topbarNum)  topbarNum.textContent  = globalNum;
-  if (topbarFill) topbarFill.style.width = ((globalNum / 150) * 100) + '%';
+  if (topbarFill) topbarFill.style.width = ((globalNum / 151) * 100) + '%';
   if (topbarPhase) topbarPhase.textContent = screen.weekTitle || screen.week;
 
   // Nav buttons
@@ -5827,19 +5826,30 @@ function renderScreen() {
   const nextBtn = document.getElementById('nav-next');
   backBtn.disabled = state.currentScreen === 0;
   if (state.currentScreen === screens.length - 1) {
-    nextBtn.textContent = 'Complete ✓';
-    nextBtn.disabled = true;
+    nextBtn.textContent = 'Print Certificate';
+    nextBtn.disabled = false;
+    nextBtn.onclick = function() { openCertPage(); };
+    // Add Restart and Log Off to nav
+    var navDots = document.getElementById('nav-dots');
+    navDots.innerHTML =
+      '<button onclick="menuAction(\'restart\')" style="background:transparent;color:var(--navy);border:1px solid rgba(26,39,68,0.2);padding:8px 16px;border-radius:6px;font-family:var(--font-sans);font-size:12px;font-weight:500;cursor:pointer;margin:0 4px">Restart</button>' +
+      '<button onclick="menuAction(\'logoff\')" style="background:transparent;color:var(--text-secondary);border:1px solid rgba(26,39,68,0.12);padding:8px 16px;border-radius:6px;font-family:var(--font-sans);font-size:12px;font-weight:500;cursor:pointer;margin:0 4px">Log Off</button>';
   } else {
     nextBtn.textContent = 'Next →';
     nextBtn.disabled = false;
+    nextBtn.onclick = function() { goNext(); };
   }
 
   // Track visited
   if (!state.visited) state.visited = [];
   if (!state.visited.includes(state.currentScreen)) state.visited.push(state.currentScreen);
 
-  updateDots();
-  updateMenuProgress();
+  if (state.currentScreen === screens.length - 1) {
+    updateMenuProgress();
+  } else {
+    updateDots();
+    updateMenuProgress();
+  }
 }
 
 function updateDots() {
@@ -5857,12 +5867,12 @@ function updateDots() {
 
 function updateMenuProgress() {
   const globalNum = state.currentScreen + 1;
-  const pct = (globalNum / 150) * 100;
+  const pct = (globalNum / 151) * 100;
   const footerFill = document.getElementById('menu-footer-fill');
   const footerText = document.getElementById('menu-footer-text');
   const footerWeek = document.getElementById('menu-footer-week');
   if (footerFill) footerFill.style.width = pct + '%';
-  if (footerText) footerText.textContent = 'Screen ' + globalNum + ' of 150';
+  if (footerText) footerText.textContent = 'Screen ' + globalNum + ' of 151';
   if (footerWeek) footerWeek.textContent = 'Week 1 of 8';
   buildMenuScreenList();
 }
@@ -6194,6 +6204,7 @@ function getScreenImage(screenId) {
     'S-78': 'assets/images/s78-insight-tree.webp',
     'S-79': 'assets/images/s79-insight-connection.webp',
     'S-80': 'assets/images/s80-practice-roots.webp',
+    'S-81': 'assets/images/s81-priya2.webp',
     'S-82': 'assets/images/s82-insight-leaving-out.webp',
     'S-83': 'assets/images/s83-practice-trunk.webp',
     'S-84': 'assets/images/s84-leon2.webp',

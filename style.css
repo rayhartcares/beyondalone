@@ -732,6 +732,54 @@ body {
   background: linear-gradient(160deg, rgba(184,146,42,0.06) 0%, transparent 50%);
 }
 
+/* Scripture screen with background image */
+.screen-scripture-bg {
+  min-height: calc(100vh - 46px - 72px);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-scripture-bg-overlay {
+  width: 100%;
+  min-height: calc(100vh - 46px - 72px);
+  background: rgba(8, 12, 24, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-scripture-bg-overlay .scripture-screen {
+  background: none;
+  min-height: unset;
+  color: #fff;
+  padding: 3rem 4rem;
+  max-width: 680px;
+  text-align: center;
+}
+
+.screen-scripture-bg-overlay .scripture-ref {
+  color: rgba(255,255,255,0.75);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
+.screen-scripture-bg-overlay .scripture-text {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+.screen-scripture-bg-overlay .scripture-divider {
+  border-color: rgba(255,255,255,0.3);
+}
+
+.screen-scripture-bg-overlay .scripture-translation-note {
+  color: rgba(255,255,255,0.65);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+}
+
 /* --- BOTTOM NAV --- */
 .bottom-nav {
   display: flex;
